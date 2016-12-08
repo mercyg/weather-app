@@ -4,7 +4,7 @@ app.service("CityService", ["$http", function ($http) {
     var cities = {};
     var nextLocation;
     this.cityWeather = function (state) {
-        var baseUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + state + "&mode=json&appid=18a926c00a15bf7072316e88506a8add&units=imperial"
+        var baseUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + state + "&mode=json&appid=18a926c00a15bf7072316e88506a8add&units=imperial"
         return $http.get(baseUrl)
             .then(function (response) {
                 cities.name = response.data.name;
