@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-push-2 col-sm-8">
+        <div class="jumbotron">
+            <h1 align="center">Weather app</h1>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center">Temprature: {{temp}} <span ng-show="temp">celicus</span></h2>
+                    <h2 class="text-center">{{describe}}</h2>
+                    <canvas id="clear-day" width="64" height="64"></canvas>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-push-4 col-sm-7 input-group">
+                        <input type="text" class="form-control" placeholder="Enter another country" ng-model="state">
+                        <span class="input-group-btn">
+                        <a href="#/city"><button type="button" class="btn btn-info" ng-click="setNextLocation(state)">Search</button></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
