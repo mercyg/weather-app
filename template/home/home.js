@@ -13,7 +13,7 @@ app.service("WeatherService", ["$geolocation", "$http", function($geolocation, $
     }
     this.weather = function(long, lat) {
         //     var baseUrl = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&appid=18a926c00a15bf7072316e88506a8add&units=metric"
-        var baseUrl = "http://crossorigin.me/https://api.darksky.net/forecast/37b36f0ccffe23b0d9ec4169e1fa9afc/" + lat + "," + long;
+        var baseUrl = "https://crossorigin.me/https://api.darksky.net/forecast/37b36f0ccffe23b0d9ec4169e1fa9afc/" + lat + "," + long;
         return $http.get(baseUrl);
     }
 
