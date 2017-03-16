@@ -16,4 +16,3 @@ This application is under progress their are some features that I want to add bu
 
 https://mercyg.github.io/weather-app/#/ 
 
-If you are using chrome please add cors extenstion to the browser and also allow to load unsafe scripts 
